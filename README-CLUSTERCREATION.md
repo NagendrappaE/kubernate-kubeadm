@@ -14,7 +14,7 @@ https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-ku
 
 172.31.19.233 --ip address of master
 
-kubeadm init --apiserver-advertise-address=172.31.19.233 --pod-network-cidr=192.168.1.1/16  --node-name=master --ignore-preflight-errors=ALL
+kubeadm init --apiserver-advertise-address=172.31.19.233 --pod-network-cidr=192.168.0.0/16  --node-name=master --ignore-preflight-errors=ALL
   or 
   kubeadm init --apiserver-advertise-address=172.31.19.233 --node-name=master --ignore-preflight-errors=ALL
 
