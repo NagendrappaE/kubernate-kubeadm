@@ -1,4 +1,5 @@
 # kubernate-kubeadm
+https://www.youtube.com/watch?v=l7gC4SgW7DU&t=414s
 #installing kubedm  in AWS
 1.i have created 3 ec2 instances in AWS
    a)master 
@@ -73,12 +74,9 @@ kubeadm join 172.31.19.233:6443 --token 9zlxoz.2hed3rbg7dlov5zc \
 Alternatively, if you are the root user, you can run:
 
   export KUBECONFIG=/etc/kubernetes/admin.conf
-#9. shows master not ready
+#9. shows master not ready  and apply the network plugins
 	
-	https://stackoverflow.com/questions/44086826/kubeadm-master-node-never-ready
-	
-	kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/Documentation/kube-flannel.yml
- kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/Documentation/k8s-manifests/kube-flannel-rbac.yml
+	https://docs.projectcalico.org/getting-started/kubernetes/quickstart
 
 	
 ###################################delete node
