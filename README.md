@@ -75,6 +75,12 @@ Alternatively, if you are the root user, you can run:
   export KUBECONFIG=/etc/kubernetes/admin.conf
 #9. shows master not ready
 	
+	https://stackoverflow.com/questions/44086826/kubeadm-master-node-never-ready
+	
+	kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/Documentation/kube-flannel.yml
+ kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/Documentation/k8s-manifests/kube-flannel-rbac.yml
+
+	
 ###################################delete node
 	
 	kubectl drain master --delete-local-data --force --ignore-daemonsets
