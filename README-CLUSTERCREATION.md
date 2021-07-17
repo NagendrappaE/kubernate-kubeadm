@@ -27,9 +27,11 @@ kubectl create -f https://docs.projectcalico.org/manifests/custom-resources.yaml
 
 
 
-5. copy the  generated as below in all the salves (worker nodes)
+#5. copy the  generated as below in all the salves (worker nodes)
 
-kubeadm join phase kubelet-start 172.31.19.233:6443 --token 5elq8r.vwacp93fxtienb1x --discovery-token-ca-cert-hash sha256:4bb764dfce2ab7798fd98e89050774157ff4396a745a961be858e78eeca491e4
+
+
+sudo kubeadm join 172.31.41.121:6443 --token x119h3.3e0ga6ez7po4geab --discovery-token-ca-cert-hash sha256:96556e50638e89870d58aceb727d4b36221ce0c820a0a6570f1bb05ee597b166 --ignore-preflight-errors=ALL
 
 https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/create-cluster-kubeadm/
 
