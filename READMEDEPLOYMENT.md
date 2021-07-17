@@ -4,4 +4,8 @@
 
 #1 we need to deploy the docker image on  worker node(slave node)
 
-#2
+#2 create deployment at master 
+
+kubectl create deployment helloworld --image amanfiet/spring-docker-demo:latest --replicas=3
+
+3.
