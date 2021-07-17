@@ -57,4 +57,26 @@ kubeadm join 172.31.19.233:6443 --token 9zlxoz.2hed3rbg7dlov5zc \
  kubeadm join 172.31.19.233:6443 --token 9zlxoz.2hed3rbg7dlov5zc --discovery-token-ca-cert-hash sha256:181cdcaa104b0e58a555f3776f29b245807542042b54ed6e6261a3761dd7f8bb
    
    
- 7 . 
+ 7 . get the status by below comand at master
+	
+	kubectl get all --all-namespaces
+	
+	kubectl get nodes   -->u should get the nodes
+
+#8.The connection to the server localhost:8080 was refused - did you specify the right host or port?
+
+	
+	 mkdir -p $HOME/.kube
+  sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+  sudo chown $(id -u):$(id -g) $HOME/.kube/config
+
+Alternatively, if you are the root user, you can run:
+
+  export KUBECONFIG=/etc/kubernetes/admin.conf
+#9. shows master not ready
+	
+###################################delete node
+	
+	kubectl drain master --delete-local-data --force --ignore-daemonsets
+	
+	
