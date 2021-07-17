@@ -35,3 +35,12 @@ https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/create-clu
 
 6.kubectl get nodes
 
+
+#####################CLEAN UP Cluster################
+
+1.reset kubeadm
+
+kubectl reset
+
+2.
+
