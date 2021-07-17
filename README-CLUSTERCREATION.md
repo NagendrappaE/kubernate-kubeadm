@@ -49,7 +49,13 @@ ubuntu@ip-172-31-1-189:~$ export KUBECONFIG=/etc/kubernetes/admin.conf
 
 1.reset kubeadm
 
-kubectl reset
+kubeadm reset
+
 
 2.
+kubectl drain master --delete-emptydir-data --force --ignore-daemonsets
+
+3.
+
+kubectl delete node master
 
