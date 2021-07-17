@@ -35,6 +35,13 @@ https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/create-clu
 
 6.kubectl get nodes
 
+####if u get erro#######
+
+kubectl get nodes
+The connection to the server 172.31.1.189:6443 was refused - did you specify the right host or port?
+ubuntu@ip-172-31-1-189:~$ export KUBECONFIG=/etc/kubernetes/admin.conf
+
+
 
 #####################CLEAN UP Cluster################
 
